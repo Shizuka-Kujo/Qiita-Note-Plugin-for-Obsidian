@@ -1,9 +1,9 @@
 {
-    "id": "qiita-note-plugin",
-    "name": "Qiita Note Plugin",
+    "id": "qiita-note",
+    "name": "Qiita Note",
     "version": "1.0.0",
     "minAppVersion": "0.15.0",
-    "description": "Add Qiita-style :::note blocks to Obsidian with info, warn, and alert types, styled with Font Awesome icons. Includes Qiita-inspired preview styling.",
+    "description": "Add Qiita-style note blocks (info, warn, alert) with Font Awesome icons.",
     "author": "Shizuka-Kujo",
     "authorUrl": "https://x.com/CosmoCurious",
     "isDesktopOnly": false
