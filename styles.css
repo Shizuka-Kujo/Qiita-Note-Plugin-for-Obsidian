@@ -1,0 +1,585 @@
+/*********************************************************************/
+/****    Font Awesome 6 Free - Minimal set for Qiita Note Plugin    ****/
+/*********************************************************************/
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2") format("woff2"),
+         url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.ttf") format("truetype");
+}
+
+.fa, .fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-check-circle:before { content: "\f058"; }
+.fa-exclamation-circle:before { content: "\f06a"; }
+.fa-times-circle:before { content: "\f057"; }
+
+.fa-fw { text-align: center; width: 1.25em; }
+
+
+/*********************************************************************/
+/***************       プレビュー画面のスタイル設定        ***************/
+/*********************************************************************/
+/* スタイルリセット */
+html {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.markdown-preview-view html,
+.markdown-preview-view body,
+.markdown-preview-view div,
+.markdown-preview-view span,
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.markdown-preview-view p,
+.markdown-preview-view a,
+.markdown-preview-view address,
+.markdown-preview-view big,
+.markdown-preview-view em,
+.markdown-preview-view img,
+.markdown-preview-view small,
+.markdown-preview-view strong,
+.markdown-preview-view sub,
+.markdown-preview-view sup,
+.markdown-preview-view pre,
+.markdown-preview-view code,
+.markdown-preview-view summary,
+.markdown-preview-view dl,
+.markdown-preview-view dt,
+.markdown-preview-view dd,
+.markdown-preview-view ol,
+.markdown-preview-view ul,
+.markdown-preview-view li,
+.markdown-preview-view table,
+.markdown-preview-view caption,
+.markdown-preview-view tbody,
+.markdown-preview-view tr,
+.markdown-preview-view th,
+.markdown-preview-view td,
+.markdown-preview-view input,
+.markdown-preview-view textarea,
+.markdown-preview-view button,
+.markdown-preview-view article,
+.markdown-preview-view aside,
+.markdown-preview-view canvas,
+.markdown-preview-view figure,
+.markdown-preview-view figcaption,
+.markdown-preview-view footer,
+.markdown-preview-view header,
+.markdown-preview-view hgroup,
+.markdown-preview-view nav,
+.markdown-preview-view section,
+.markdown-preview-view video {
+    font-family: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol, Apple Color Emoji";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: baseline;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.markdown-preview-view summary,
+.markdown-preview-view article,
+.markdown-preview-view aside,
+.markdown-preview-view details,
+.markdown-preview-view figcaption,
+.markdown-preview-view figure,
+.markdown-preview-view footer,
+.markdown-preview-view header,
+.markdown-preview-view hgroup,
+.markdown-preview-view menu,
+.markdown-preview-view nav,
+.markdown-preview-view section,
+.markdown-preview-view img,
+.markdown-preview-view input,
+.markdown-preview-view textarea,
+.markdown-preview-view button {
+    display: block;
+}
+.markdown-preview-view a {
+    color: #6698fb;
+    text-decoration: none;
+}
+.markdown-preview-view ol,
+.markdown-preview-view ul {
+    list-style: none;
+}
+.markdown-preview-view table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* プレビュー画面の基本スタイル */
+.markdown-preview-view {
+    box-sizing: border-box;
+    background: #f0f0f0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.markdown-preview-view {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.markdown-preview-view {
+    color: #323941;
+    background: #f0f0f0;
+    width: 100%;
+    padding: 3.6em 2.4em;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* 画像と水平線 */
+.markdown-preview-view img {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.markdown-preview-view hr {
+    height: 0;
+    border-top: none;
+    border-right: none;
+    border-bottom: 3px dotted #dadada;
+    border-left: none;
+    margin: 2.2em 0 2.1em;
+}
+
+/* 見出し */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5 {
+    line-height: 1.2em;
+    font-weight: bold;
+}
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5 {
+    margin-bottom: 25px;
+}
+.markdown-preview-view h4,
+.markdown-preview-view h5 {
+    padding-bottom: 0.4em;
+}
+.markdown-preview-view h1 {
+    color: #4e86f6;
+    padding: 0.8em 0;
+    border-top: 4px solid #4e86f6;
+    border-bottom: 4px solid #4e86f6;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 600;
+}
+.markdown-preview-view h2 {
+    font-size: 1.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 3px solid #d5d5d5;
+}
+.markdown-preview-view h3 {
+    font-size: 1.6em;
+    padding-bottom: 0.24em;
+    border-bottom: 1px solid #d5d5d5;
+}
+.markdown-preview-view h4 {
+    font-size: 1.4em;
+    border-bottom: 1px dotted #c6c6c6;
+}
+.markdown-preview-view h5 {
+    display: inline-block;
+    font-size: 1.2em;
+    width: auto;
+    border-bottom: 1px dotted #c6c6c6;
+}
+
+/* テキスト強調 */
+.markdown-preview-view strong {
+    font-size: inherit;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+
+/* 外部リンクのアイコンを削除 */
+.markdown-preview-view a.external-link {
+    background-image: none;
+}
+
+/* 段落と詳細要素 */
+.markdown-preview-view p,
+.markdown-preview-view details {
+    font-size: 15px;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+.markdown-preview-view p:last-of-type {
+    margin-bottom: 1em;
+}
+
+/* インラインコード */
+.markdown-preview-view code {
+    box-sizing: border-box;
+    display: inline-block;
+    color: #323941;
+    font-weight: bold;
+    background: #cfcfcf;
+    padding: 0.2em 0.3em;
+    margin: 0 0.2em;
+    border-radius: 3px;
+}
+
+/* リスト */
+.markdown-preview-view ul,
+.markdown-preview-view ol,
+.markdown-preview-view li,
+.markdown-preview-view dl,
+.markdown-preview-view dt,
+.markdown-preview-view dd {
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: 1.4em;
+}
+.markdown-preview-view li {
+    display: list-item;
+}
+.markdown-rendered.markdown-preview-view .list-bullet {
+    line-height: 1.4em;
+}
+.markdown-preview-view ul:first-of-type,
+.markdown-preview-view dl:first-of-type {
+    list-style: disc;
+}
+.markdown-preview-view ol:first-of-type {
+    list-style: decimal;
+}
+.markdown-preview-view ul:first-of-type,
+.markdown-preview-view dl:first-of-type,
+.markdown-preview-view ol:first-of-type {
+    padding: 0;
+}
+
+.markdown-preview-view li ol {
+    list-style-type: decimal;
+}
+.markdown-preview-view ul:first-of-type > li,
+.markdown-preview-view dl:first-of-type > li,
+.markdown-preview-view ol:first-of-type > li {
+    margin-bottom: 1em;
+}
+.markdown-preview-view ul:first-of-type > li:last-of-type > p:last-of-type,
+.markdown-preview-view dl:first-of-type > li:last-of-type > p:last-of-type,
+.markdown-preview-view ol:first-of-type > li:last-of-type > p:last-of-type {
+    margin-bottom: 0.4em;
+}
+.markdown-preview-view ul:first-of-type > li > ul,
+.markdown-preview-view ul:first-of-type > li > dl,
+.markdown-preview-view ul:first-of-type > li > ol,
+.markdown-preview-view dl:first-of-type > li > ul,
+.markdown-preview-view dl:first-of-type > li > dl,
+.markdown-preview-view dl:first-of-type > li > ol,
+.markdown-preview-view ol:first-of-type > li > ul,
+.markdown-preview-view ol:first-of-type > li > dl,
+.markdown-preview-view ol:first-of-type > li > ol {
+    margin-left: 0.4em;
+    margin-bottom: 0.4em;
+}
+.markdown-preview-view ul:first-of-type > li > ul,
+.markdown-preview-view ul:first-of-type > li > dl,
+.markdown-preview-view dl:first-of-type > li > ul,
+.markdown-preview-view dl:first-of-type > li > dl,
+.markdown-preview-view ol:first-of-type > li > ul,
+.markdown-preview-view ol:first-of-type > li > dl {
+    list-style: circle;
+    margin: 0.4em 0 0 0;
+}
+.markdown-preview-view ul:first-of-type > li > ul > li,
+.markdown-preview-view ul:first-of-type > li > dl > li,
+.markdown-preview-view ul:first-of-type > li > ol > li,
+.markdown-preview-view dl:first-of-type > li > ul > li,
+.markdown-preview-view dl:first-of-type > li > dl > li,
+.markdown-preview-view dl:first-of-type > li > ol > li,
+.markdown-preview-view ol:first-of-type > li > ul > li,
+.markdown-preview-view ol:first-of-type > li > dl > li {
+    display: list-item;
+    margin-bottom: 0.2em;
+}
+.markdown-preview-view ul:first-of-type > li > ul > li .list-bullet::after,
+.markdown-preview-view ul:first-of-type > li > dl > li .list-bullet::after,
+.markdown-preview-view ul:first-of-type > li > ol > li .list-bullet::after,
+.markdown-preview-view dl:first-of-type > li > ul > li .list-bullet::after,
+.markdown-preview-view dl:first-of-type > li > dl > li .list-bullet::after,
+.markdown-preview-view dl:first-of-type > li > ol > li .list-bullet::after,
+.markdown-preview-view ol:first-of-type > li > ul > li .list-bullet::after,
+.markdown-preview-view ol:first-of-type > li > dl > li .list-bullet::after {
+    position: absolute;
+    content: "​";
+    pointer-events: none;
+    color: transparent;
+    width: 4px;
+    height: 4px;
+    transform: var(--list-bullet-transform);
+    background-color: transparent;
+    border-radius: var(--list-bullet-radius);
+    border: #323941 1px solid;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.markdown-preview-view > ul > li > ul > li > ul,
+.markdown-preview-view > ul > li > ul > li > dl,
+.markdown-preview-view > ul > li > dl > li > ul,
+.markdown-preview-view > ul > li > dl > li > dl,
+.markdown-preview-view > ul > li > ol > li > ul,
+.markdown-preview-view > ul > li > ol > li > dl,
+.markdown-preview-view > dl > li > ul > li > ul,
+.markdown-preview-view > dl > li > ul > li > dl,
+.markdown-preview-view > dl > li > dl > li > ul,
+.markdown-preview-view > dl > li > dl > li > dl,
+.markdown-preview-view > dl > li > ol > li > ul,
+.markdown-preview-view > dl > li > ol > li > dl {
+    list-style-type: square;
+    margin-left: 0.6em;
+    margin-top: 0.4em;
+}
+.markdown-preview-view ul:first-of-type > li > ul > li > ul > li .list-bullet::after,
+.markdown-preview-view ul:first-of-type > li > ul > li > dl > li .list-bullet::after,
+.markdown-preview-view ul:first-of-type > li > dl > li > ul > li .list-bullet::after,
+.markdown-preview-view ul:first-of-type > li > dl > li > dl > li .list-bullet::after,
+.markdown-preview-view ul:first-of-type > li > ol > li > ul > li .list-bullet::after,
+.markdown-preview-view ul:first-of-type > li > ol > li > dl > li .list-bullet::after,
+.markdown-preview-view dl:first-of-type > li > ul > li > ul > li .list-bullet::after,
+.markdown-preview-view dl:first-of-type > li > ul > li > dl > li .list-bullet::after,
+.markdown-preview-view dl:first-of-type > li > dl > li > ul > li .list-bullet::after,
+.markdown-preview-view dl:first-of-type > li > dl > li > dl > li .list-bullet::after,
+.markdown-preview-view dl:first-of-type > li > ol > li > ul > li .list-bullet::after,
+.markdown-preview-view dl:first-of-type > li > ol > li > dl > li .list-bullet::after {
+    position: absolute;
+    content: "​";
+    pointer-events: none;
+    color: transparent;
+    width: 3px;
+    height: 3px;
+    background-color: #323941;
+    border-radius: 0;
+    border: #323941 1px solid;
+}
+
+/* 詳細（summary） */
+.markdown-preview-view summary {
+    color: #4e86f6;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.markdown-preview-view summary:hover {
+    color: #2fe9e2;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* コードブロック */
+.markdown-preview-view .code-editor-wrapper {
+    box-sizing: border-box;
+    display: block;
+    font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: #262e39;
+    padding: 0 1.6em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    border-radius: 8px;
+}
+.markdown-preview-view .el-pre {
+    padding: 1.4em 0 1.5em;
+    border-radius: 8px;
+    background-color: var(--code-background);
+    margin-top: 1em;
+    margin-bottom: 1.4em;
+    z-index: 0;
+}
+.markdown-preview-view pre:has(code) {
+    padding: 0 1.6em;
+    min-height: unset;
+    z-index: 0;
+}
+.markdown-preview-view pre code {
+    display: block;
+    color: #d2d2d2;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-weight: normal;
+    line-height: 1.5em;
+    background-color: inherit;
+    box-sizing: border-box;
+    height: auto;
+    z-index: 0;
+}
+.markdown-rendered button.copy-code-button {
+    margin: 0 6px;
+    z-index: 1;
+}
+
+/* 引用 */
+.markdown-preview-view blockquote {
+    color: #000000;
+    background-color: #d3d6da;
+    margin: 1.2em 0 1.4em 0;
+    padding: 1.2em 0 0 0;
+    border: 4px solid #747474;
+    border-left: 10px solid #747474;
+    box-sizing: border-box;
+}
+.markdown-preview-view blockquote p,
+.markdown-preview-view blockquote ul,
+.markdown-preview-view blockquote dl,
+.markdown-preview-view blockquote ol {
+    color: #4f4f4f;
+    line-height: 1.4em;
+}
+.markdown-preview-view blockquote p {
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    padding: 0 1.6em 1em 1.4em;
+    margin: 0;
+}
+.markdown-preview-view blockquote p:first-of-type::before {
+    font-family: "Font Awesome 6 Free";
+    content: '\f10d';
+    color: #747474;
+    font-weight: 900;
+    line-height: 1.4em;
+    margin-right: 0.5em;
+}
+.markdown-preview-view blockquote p:last-of-type {
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
+}
+.markdown-preview-view blockquote ul,
+.markdown-preview-view blockquote dl,
+.markdown-preview-view blockquote ol {
+    margin: 0 2em 0 1em;
+}
+
+/* テーブル */
+.markdown-preview-view table,
+.markdown-preview-view th,
+.markdown-preview-view tr,
+.markdown-preview-view td {
+    line-height: 1.4em;
+    border-collapse: collapse;
+    border: 2px solid #dadada;
+    margin-bottom: 1em;
+}
+.markdown-preview-view table {
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+}
+.markdown-preview-view th,
+.markdown-preview-view tr,
+.markdown-preview-view td {
+    color: #454545;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+    padding: 0.4em 0.6em;
+}
+.markdown-preview-view th {
+    text-align: center;
+    border-bottom: 3px double #dadada;
+}
+.markdown-preview-view td {
+    vertical-align: middle;
+}
+.markdown-preview-view table tr:nth-child(odd) td {
+    background: #e6e6e6;
+}
+
+/* el-preを透明化 */
+.markdown-preview-view .el-pre:has(.note) {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.markdown-preview-view .note {
+    font-size: 14px;
+    line-height: 1.4em;
+    padding: 1em 1.8em 1em 1em;
+    margin: 1.4em 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+.markdown-preview-view .note span {
+    line-height: 1.4em;
+    font-size: 14px;
+    font-weight: 400;
+}
+.markdown-preview-view .note.info {
+    background-color: #dff4cf;
+}
+.markdown-preview-view .note.info span {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #357a00;
+}
+.markdown-preview-view .note.warn {
+    background-color: #fff0b3;
+}
+.markdown-preview-view .note.warn span {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #ae8803;
+}
+.markdown-preview-view .note.alert {
+    background-color: #ffdbdb;
+}
+.markdown-preview-view .note.alert span {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #bd0505;
+}
+.markdown-preview-view .note .fa {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+}
+.markdown-preview-view .note .fa-check-circle {
+    color: #4a90e2;
+}
+.markdown-preview-view .note .fa-exclamation-circle {
+    color: #f5a623;
+}
+.markdown-preview-view .note .fa-times-circle {
+    color: #d93025;
+}
+.markdown-preview-view .note div {
+    flex: 1;
+}
+.markdown-preview-view .note p {
+    margin: 0;
+}
